@@ -1,4 +1,4 @@
-searching for abandoned/repurposed red circuit city storefronts across america
+searching for abandoned/repurposed circuit city storefronts across america
 ===
 
 ![abandoned circuit city storefront](https://media.boingboing.net/wp-content/uploads/2016/10/nicholas-eckhart.jpg)
