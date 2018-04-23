@@ -9,7 +9,7 @@ http://articles.latimes.com/2009/jan/17/business/fi-circuitcity17/2
 
 [Data src](https://www.slideshare.net/finance22/circuit-city-stores-store-closing-list-11609-updated-information-2909-1045am-et) (see `locations.txt`)
 
-[All screenshots](p-am.cc/circuitcity)
+[All screenshots](https://p-am.cc/circuitcity)
 
 steps:
 
