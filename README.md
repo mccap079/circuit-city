@@ -1,4 +1,4 @@
-searching for abandoned red circuit city storefronts across america
+searching for abandoned/repurposed red circuit city storefronts across america
 ===
 
 ![abandoned circuit city storefront](https://media.boingboing.net/wp-content/uploads/2016/10/nicholas-eckhart.jpg)
@@ -9,7 +9,10 @@ http://articles.latimes.com/2009/jan/17/business/fi-circuitcity17/2
 
 [Data src](https://www.slideshare.net/finance22/circuit-city-stores-store-closing-list-11609-updated-information-2909-1045am-et) (see `locations.txt`)
 
+[All screenshots](p-am.cc/circuitcity)
+
 steps:
+
 0. save list of addresses as json
 
 selenium: 
@@ -26,7 +29,7 @@ selenium:
 10. capture name of current store from ad in left side panel
 11. create new json with uid (matching saved image filename), address, and current store name
 
-##Step 0:
+Step 0:
 
 The data contains the following items: Store #, Store Name, Street Address, City, State, ZIP for all stores. Using regex on `locations.txt` in sublime text to remove everything but the address:
 
@@ -35,7 +38,8 @@ The data contains the following items: Store #, Store Name, Street Address, City
 Finds all addresses (5 digit numbers), so that a newline can be added immediately following each one to deliniate between list items when `readlines()` is executed on this file from python.
 
 Next:
-
+1234
+1233
 `[\n][0-9]*(?=[ ])`
 
 Finds any series of digits between newline and a space, which is the first set of digits in each entry, in order to delete them.
@@ -52,5 +56,5 @@ Finally delete the Puerto Rican address because its format is different. Result:
 
 `selenium.common.exceptions.ElementNotInteractableException: Message: Element <input id="searchboxinput" class="tactile-searchbox-input" name="q"> is not reachable by keyboard`
 
-:((
+Constantly having to start over possibly because the page doesn't load fast enough :((
 
