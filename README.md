@@ -11,7 +11,7 @@ http://articles.latimes.com/2009/jan/17/business/fi-circuitcity17/2
 
 [All screenshots](http://p-am.cc/circuitcity)
 
-steps:
+## Steps:
 
 0. save list of addresses as json
 
@@ -38,13 +38,12 @@ The data contains the following items: Store #, Store Name, Street Address, City
 Finds all addresses (5 digit numbers), so that a newline can be added immediately following each one to deliniate between list items when `readlines()` is executed on this file from python.
 
 Next:
-1234
-1233
+
 `[\n][0-9]*(?=[ ])`
 
 Finds any series of digits between newline and a space, which is the first set of digits in each entry, in order to delete them.
 
-Next:
+Then:
 
 `[\n](\D)+(?![0-9])`
 
@@ -52,7 +51,7 @@ Finds all chars between newline and the first digit that is anything but a digit
 
 Finally delete the Puerto Rican address because its format is different. Result: `locations_pretty.txt`
 
-##THIS ERROR
+## THIS ERROR
 
 `selenium.common.exceptions.ElementNotInteractableException: Message: Element <input id="searchboxinput" class="tactile-searchbox-input" name="q"> is not reachable by keyboard`
 
